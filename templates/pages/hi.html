@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+
+{% block cont %}
+
+
+
+
+
+
+
+{% endblock %}
+
+
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" style="font-size: 80px;" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+    <a href="{% url 'logout' %}"></a>
+</button>
+
+
+
+<a href="{{request.user}}" style="font-size: 30;
+                                  color: red;
+                                  position: left;"></a>
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="
+            position: relative;
+            display: inline-block;">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Account</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
+        </div>
+      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.parallax {
+  /* The image used */
+  background-image: url({% static 'pages/images/snowy.jpg' %});
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+
+<div class="parallax"></div>
+
+<div style="height:300px;background-color:red;font-size:36px">
+**insert quote of the day
+</div>
+
+
+<div style="height:700px;background-color:white;font-size:36px">
+**insert your story
+</div>
+
+<div class="parallax"></div>
+
+<div style="height:700px;background-color:red;font-size:36px">
+**insert coaching a brief summer with a link
+</div>
+
+<div class="parallax"></div>
+
+<div style="height:700px;background-color:red;font-size:36px">
+**insert blog posts 3 over the parallax background
+</div>
+
+<div style="height:700px;background-color:red;font-size:36px">
+**insert email newsletter sign up
+</div>
+
+</body>
+</html>
+{% endblock %}

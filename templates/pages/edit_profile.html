@@ -1,0 +1,39 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Edit Profile{% endblock %}
+
+
+
+{% block donot_content %}
+
+<h1>Edit Profile...</h1>
+<br/><br/>
+        {{ user.profile.bio }}
+<br/><br/>
+
+<!--        {{ form.username }}-->
+<!--        {{ form.first_name }}-->
+<!--        {{ form.last_name }}-->
+<!--        {{ form.email }}-->
+<!--        {{ form.password1 }}-->
+<!--        {{ form.password1 }}-->
+<!--        {{ user.profile.bio }}-->
+
+
+<div class="form-group">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <br>
+        <button class="btn btn-secondary">Update
+        Profile</button>
+    </form>
+</div>
+
+
+
+
+
+{% endblock %}
+
